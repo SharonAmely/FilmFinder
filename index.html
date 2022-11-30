@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="data.js"></script>
+    <script defer src="app.js"></script>
+    <title>Sharon's Film Finder</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-container">
+            <h1>Welcome to Sharon's Movie Finder</h1>
+        </header>
+        <nav class="nav-container">
+            <ul>
+                <li>
+                    <input type="radio" name="filter-button" id="newest-movies-button" value="nieuwste" />
+                    <label for="newest-movies-button">Newest Movies</label>
+                </li>
+                <li>
+                    <input type="radio" name="filter-button" id="avengers-movies-button" value="avengers" />
+                    <label for="avengers-movies-button">Avengers Movies</label>
+                </li>
+                <li>
+                    <input type="radio" name="filter-button" id="xmen-movies-button" value="x-men" />
+                    <label for="xmen-movies-button">X-Men Movies</label>
+                </li>
+                <li>
+                    <input type="radio" name="filter-button" id="princess-movies-button" value="princess" />
+                    <label for="princess-movies-button">Princess Movies</label>
+                </li>
+                <li>
+                    <input type="radio" name="filter-button" id="batman-movies-button" value="batman" />
+                    <label for="batman-movies-button">Batman Movies</label>
+                </li>
+                <li>
+                    <form id="search-form">
+                        <input type="text" name="filter-button" id="search-input" class="search-input" placeholder="Vul een zoekterm in..." autocomplete="on"/>
+                        <input type="submit" id="search-button" class="search-button" value="Search"/>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content-container">
+            <ul class="main-content-list" id="movies-list"></ul>
+        </div>
+        <footer class="footer-container">
+            <p>Made by Sharon</p>
+        </footer>
+    </div>
+</body>
+</html>
